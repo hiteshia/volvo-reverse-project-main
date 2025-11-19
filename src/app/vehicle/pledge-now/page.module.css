@@ -1,0 +1,9 @@
+.btnPledge {
+  width: 250px;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  height: 40px;
+  text-transform: uppercase;
+  line-height: 26px;
+}

@@ -1,0 +1,8 @@
+.centerCropped {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 46px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
