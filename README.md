@@ -1,5 +1,21 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Password Protection
+
+This site is password protected. All pages require authentication before access.
+
+### Configuration
+
+To set a custom password, create a `.env.local` file in the root directory and add:
+
+```
+NEXT_PUBLIC_SITE_PASSWORD=your_password_here
+```
+
+If no password is set, the default password is `volvo2024`.
+
+**Note:** Once a user enters the correct password, they won't be asked for it again on the same device (authentication is stored in localStorage).
+
 ## Getting Started
 
 First, run the development server:
@@ -14,7 +30,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3020](http://localhost:3020) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 

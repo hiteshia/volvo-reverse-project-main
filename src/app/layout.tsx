@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import ToastProvider from "@/app/components/common/toast";
+import PasswordProtection from "@/app/components/common/PasswordProtection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
-        <ToastProvider>{children}</ToastProvider>
+        <PasswordProtection>
+          <ToastProvider>{children}</ToastProvider>
+        </PasswordProtection>
       </body>
     </html>
   );
