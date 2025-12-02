@@ -11,17 +11,20 @@ export default function TreeDetail({ params }: { params: { slug: number } }) {
   return (
     <>
       <div className="row m-0">
-        <div className="col-12 text-center mb-4">
-          <h1 className="instaHeading">About {tree["Vernacular Name"]}</h1>
-        </div>
         <div className="col-12">
           <div className="row">
-            <div className="col-12 text-center position-relative">
-              <img
-                src={`/images/trees/${tree["Images"]}`}
-                className="abtPlantationImg"
-              />
-              <div className="abtPltnWhiteBg"></div>
+            <div className="col-12">
+              <h2 className="instaHeading text-center mb-4">
+                TREES PLANTED UNDER
+                <br />
+                REVERSE PROJECT
+              </h2>
+            </div>
+            <div className="col-12 text-center">
+              <div className="abtPlantationImg">
+                <img src={`/images/trees/${tree["Images"]}`} />
+                <h1 className="instaHeading text-center mt-3">About {tree["Vernacular Name"]}</h1>
+              </div>
             </div>
           </div>
         </div>
@@ -35,20 +38,24 @@ export default function TreeDetail({ params }: { params: { slug: number } }) {
               <b>Other Names: </b>
               {tree["Other Names"]}
             </h2>{" "}
-            <h3 className={styles.subHeading}>
-              Ecological & Commercial Importance
-            </h3>
+            <h3 className={styles.subHeading}>Ecological & Commercial Importance</h3>
             <ul style={{ listStyle: "none" }}>
-              {tree["Ecological & Commercial Importance"]
-                .split("\r\n")
-                .map((item, index) => (
-                  <li style={{marginBottom: "5px"}} key={index}>{item}</li>
-                ))}
+              {tree["Ecological & Commercial Importance"].split("\r\n").map((item, index) => (
+                <li
+                  style={{ marginBottom: "5px" }}
+                  key={index}>
+                  {item}
+                </li>
+              ))}
             </ul>
             <h3 className={styles.subHeading}>Medicinal Properties</h3>
             <ul style={{ listStyle: "none" }}>
               {tree["Medicinal Properties"].split("\r\n").map((item, index) => (
-                <li style={{marginBottom: "5px"}} key={index}>{item}</li>
+                <li
+                  style={{ marginBottom: "5px" }}
+                  key={index}>
+                  {item}
+                </li>
               ))}
             </ul>
             {/* <h3 className={styles.subHeading}>Cultural/Historicl/Mythological Importance</h3>

@@ -1,14 +1,14 @@
-import { getPldeges } from "@/service/pledge";
 import styles from "./page.module.css";
 import PledgeNowButton from "@/app/components/register/pledge-now-button";
+import TreePledgeButton from "@/app/components/register/tree-pledge-button";
 
 export const dynamic = "force-dynamic";
 
-const pledges = getPldeges();
-
 // Nextjs app router page
 export default function DownloadCertificate({ searchParams }: { searchParams: { [key: string]: string | string[] | undefined } }) {
-  console.log(searchParams, pledges);
+  // Get name from searchParams if available
+  const name = typeof searchParams.name === "string" ? searchParams.name : undefined;
+
   return (
     <>
       <div className="row m-0">
@@ -20,12 +20,13 @@ export default function DownloadCertificate({ searchParams }: { searchParams: { 
         </div>
         <PledgeNowButton
           styles={styles}
-          pledges={pledges}
+          pledges={0}
         />
-        <div className="col-12 text-center mt-5 pt-md-5 mt-md-4 text-white text-center">
-          <button className={`btn btn-primary ${styles.btnPledge}`}>Pledge Now</button>
-        </div>
-        <div className="col-12 text-center mt-5">
+        <TreePledgeButton
+          styles={styles}
+          name={name}
+        />
+        {/* <div className="col-12 text-center mt-5">
           <img
             src="/images/green-patrn-car.png"
             className=""
@@ -40,7 +41,7 @@ export default function DownloadCertificate({ searchParams }: { searchParams: { 
             }}
             alt="volvo car"
           />
-        </div>
+        </div> */}
         {/* <div
           className="col-12 text-center"
           style={{ height: "100vh", marginTop: "-4em" }}

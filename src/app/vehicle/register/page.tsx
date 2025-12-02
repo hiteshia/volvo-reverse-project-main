@@ -11,13 +11,13 @@ export default function App() {
         <div className="col-12">
           <RegisterForm styles={styles} />
         </div>
-        <div className="col-12">
+        {/* <div className="col-12">
           <img
             src="/images/green-patrn-car.png"
             className="volvoCar"
             alt="volvo car"
           />
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -25,22 +25,20 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div
-              className="col-12 text-center mt-3 pt-md-5 mt-md-4 text-white text-center"
-              style={{ fontSize: "13px" }}
-            >
-              More than 10,000 trees have already been planted and <br /> with
-              every kilometer you drive, you can help us plant more.
+            <div className="col-12 pt-4 text-center text-white text-center">
+              <p>More than 10,000 trees have already been planted and with every kilometer you drive, you can help us plant more.</p>
             </div>
-            <div className="col-12 text-center mt-3">
+            {/* <div className="col-12 text-center mt-3">
               <img
                 src="/images/green-patrn-car.png"
                 className=""
                 style={{ width: "20%", maxWidth: "100px" }}
                 alt="volvo car"
               />
-            </div>
-            <div className="col-12 text-center" style={{ zIndex: "1" }}>
+            </div> */}
+            <div
+              className="col-12 text-center"
+              style={{ zIndex: "1" }}>
               {/* <video
                 src="/video/volvo_reverse_latest_720p.mp4"
                 style={{ width: "96%", marginTop: "-2em", backgroundColor: "#000" }}
@@ -49,7 +47,7 @@ export default function Home() {
                 poster="/images/volvo-diya-mirza.png"
                 preload="false"
               /> */}
-              <iframe
+              {/* <iframe
                 width="100%"
                 height="315"
                 src="https://www.youtube.com/embed/gLMn0tYxvfc?si=kzdnNdL6mmgJIR_l&amp;start=11"
@@ -57,14 +55,11 @@ export default function Home() {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen={true}
-              ></iframe>
-              
+                allowFullScreen={true}></iframe> */}
             </div>
-            <div
+            {/* <div
               className="col-12 text-center"
-              style={{marginTop: "-4em" }}
-            >
+              style={{ marginTop: "-4em" }}>
               <img
                 src="/images/green-road.png"
                 className=""
@@ -78,7 +73,7 @@ export default function Home() {
                 style={{ width: "20%", maxWidth: "100px" }}
                 alt="volvo car"
               />
-            </div>
+            </div> */}
           </div>
           <div
             className="w-100 position-fixed m-0 text-center"
@@ -86,8 +81,7 @@ export default function Home() {
               bottom: 0,
               zIndex: 2,
               left: 0,
-            }}
-          >
+            }}>
             <div className="row homePageTab">
               <div
                 className="col-6"
@@ -96,8 +90,7 @@ export default function Home() {
                   height: "40px",
                   fontSize: ".8em",
                   lineHeight: "40px",
-                }}
-              >
+                }}>
                 <Link
                   href="/vehicle/pledge-now"
                   style={{
@@ -106,8 +99,7 @@ export default function Home() {
                     textDecoration: "none",
                     color: "#000",
                     display: "block",
-                  }}
-                >
+                  }}>
                   Non-EV Users
                 </Link>
               </div>
@@ -118,8 +110,7 @@ export default function Home() {
                   height: "40px",
                   fontSize: ".8em",
                   lineHeight: "40px",
-                }}
-              >
+                }}>
                 <Link
                   href={"/vehicle/register"}
                   style={{
@@ -128,8 +119,7 @@ export default function Home() {
                     textDecoration: "none",
                     color: "#000",
                     display: "block",
-                  }}
-                >
+                  }}>
                   EV Users
                 </Link>
               </div>

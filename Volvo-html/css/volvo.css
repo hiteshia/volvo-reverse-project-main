@@ -1,121 +1,119 @@
 @font-face {
-    font-family: 'Volvo Novum-Regular';
-    src: url(../fonts/VolvoNovum-Regular.otf);
+  font-family: "Volvo Novum-Regular";
+  src: url(../fonts/VolvoNovum-Regular.otf);
 }
 
 @font-face {
-    font-family: 'Volvo Novum-Medium';
-    src: url(../fonts/VolvoNovum-Medium.otf);
+  font-family: "Volvo Novum-Medium";
+  src: url(../fonts/VolvoNovum-Medium.otf);
 }
 
 @font-face {
-    font-family: 'Volvo Novum-Bold';
-    src: url(../fonts/VolvoNovum-Bold.otf);
+  font-family: "Volvo Novum-Bold";
+  src: url(../fonts/VolvoNovum-Bold.otf);
 }
 
 @font-face {
-    font-family: 'VolvoBroad';
-    src: url(../fonts/VolvoBroad.ttf);
+  font-family: "VolvoBroad";
+  src: url(../fonts/VolvoBroad.ttf);
 }
 
 @font-face {
-    font-family: 'VolvoBroadPro';
-    src: url(../fonts/VolvoBroadPro.otf);
+  font-family: "VolvoBroadPro";
+  src: url(../fonts/VolvoBroadPro.otf);
 }
-
 
 .greenPattern {
-    background: url(../images/green-pattern.png) repeat;
-    height: 100vh;
+  background: url(../images/projectBG.jpg) repeat no-repeat center center / cover;
+  height: 100vh;
 }
 
 .grayPattern {
-    background: url(../images/gray-pattern.png) repeat;
-    height: 100vh;
+  background: url(../images/projectBG.jpg) repeat no-repeat center center / cover;
+  height: 100vh;
 }
 
 .navbar-collapse {
-    background: #3f3f40;
-    position: relative;
-    right: 10px;
-    top: 0px;
-    width: 80%;
-    position: fixed;
-    left: 0px;
-    z-index: 2;
+  background: #3f3f40;
+  position: relative;
+  right: 10px;
+  top: 0px;
+  width: 80%;
+  position: fixed;
+  left: 0px;
+  z-index: 2;
 }
 
 .cstmHeight {
-    background: #3f3f40;
-    height: 100vh;
-
+  background: #3f3f40;
+  height: 100vh;
 }
 
 .nav-link {
-    color: #c0c5dd !important;
-    padding: 0 0 25px 15px !important;
-    font-size: 16px !important;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
+  color: #c0c5dd !important;
+  padding: 0 0 25px 15px !important;
+  font-size: 16px !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .nav-link .aboutReverseIcon {
-    background: url(../images/icon-reverse-project.svg);
-    width: 30px;
-    height: 29px;
-    display: inline-block;
-    transform: scale(0.8);
-    position: relative;
-    top: 8px;
-    margin: 0 15px 0 0;
-    left: 5px;
+  background: url(../images/icon-reverse-project.svg);
+  width: 30px;
+  height: 29px;
+  display: inline-block;
+  transform: scale(0.8);
+  position: relative;
+  top: 8px;
+  margin: 0 15px 0 0;
+  left: 5px;
 }
 
 .nav-link .participateIcon {
-    background: url(../images/icon-participate.svg);
-    width: 29px;
-    height: 29px;
-    display: inline-block;
-    transform: scale(0.8);
-    position: relative;
-    top: 8px;
-    margin: 0 15px 0 0;
-    left: 5px;
+  background: url(../images/icon-participate.svg);
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  transform: scale(0.8);
+  position: relative;
+  top: 8px;
+  margin: 0 15px 0 0;
+  left: 5px;
 }
 
 .nav-link .plantationIcon {
-    background: url(../images/icon-plantation.svg);
-    width: 27px;
-    height: 25px;
-    display: inline-block;
-    transform: scale(0.8);
-    position: relative;
-    top: 7px;
-    margin: 0 15px 0 0;
-    left: 5px;
+  background: url(../images/icon-plantation.svg);
+  width: 27px;
+  height: 25px;
+  display: inline-block;
+  transform: scale(0.8);
+  position: relative;
+  top: 7px;
+  margin: 0 15px 0 0;
+  left: 5px;
 }
 
 .nav-link .instaPostIcon {
-    background: url(../images/icon-insta-post.svg);
-    width: 28px;
-    height: 28px;
-    display: inline-block;
-    transform: scale(0.8);
-    position: relative;
-    top: 8px;
-    margin: 0 15px 0 0;
-    left: 5px;
+  background: url(../images/icon-insta-post.svg);
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  transform: scale(0.8);
+  position: relative;
+  top: 8px;
+  margin: 0 15px 0 0;
+  left: 5px;
 }
 
 .nav-link .dwnCertificateIcon {
-    background: url(../images/icon-download-certificate.svg);
-    width: 27px;
-    height: 28px;
-    display: inline-block;
-    transform: scale(0.8);
-    position: relative;
-    top: 8px;
-    margin: 0 15px 0 0;
-    left: 5px;
+  background: url(../images/icon-download-certificate.svg);
+  width: 27px;
+  height: 28px;
+  display: inline-block;
+  transform: scale(0.8);
+  position: relative;
+  top: 8px;
+  margin: 0 15px 0 0;
+  left: 5px;
 }
 
 .aboutReverseIcon.active,
@@ -123,61 +121,60 @@
 .plantationIcon.active,
 .instaPostIcon.active,
 .dwnCertificateIcon.active {
-    filter: invert(67%) sepia(64%) saturate(388%) hue-rotate(52deg) brightness(93%) contrast(85%);
+  filter: invert(67%) sepia(64%) saturate(388%) hue-rotate(52deg) brightness(93%) contrast(85%);
 }
-
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.show {
-    color: #7dc34f !important;
+  color: #7dc34f !important;
 }
 
 .navbar-nav {
-    position: relative;
-    top: 30px;
+  position: relative;
+  top: 30px;
 }
 
 .menuText {
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    top: 21px;
-    left: 28px;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 21px;
+  left: 28px;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .cstmWhiteBorder {
-    border-top: 1px solid #7a7c83;
-    clear: both;
-    width: 90%;
-    z-index: 1;
-    position: relative;
+  border-top: 1px solid #7a7c83;
+  clear: both;
+  width: 90%;
+  z-index: 1;
+  position: relative;
 }
 
 .navbar-toggler {
-    border: none !important;
-    padding: 0px !important;
-    border-radius: 0px !important;
-    color: #fff !important;
-    position: relative;
-    z-index: 5;
-    margin: 12px;
+  border: none !important;
+  padding: 0px !important;
+  border-radius: 0px !important;
+  color: #fff !important;
+  position: relative;
+  z-index: 5;
+  margin: 12px;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .offcanvas-lg {
-    background-color: none !important;
-    max-width: 80% !important;
+  background-color: none !important;
+  max-width: 80% !important;
 }
 
-.offcanvas-backdrop.show {
-    opacity: .8 !important;
-}
+/* .offcanvas-backdrop.show {
+  opacity: 0.8 !important;
+} */
 
 /* .navbar-collapse.collapsing {
     left: -75%;
@@ -194,457 +191,452 @@
     transition: left 250ms ease-in-out;
 } */
 
-
 .navbar-toggler-icon {
-    background-image: url(../images/threebar-menu.svg) !important;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 30px;
-    filter: invert(94%) sepia(0%) saturate(7475%) hue-rotate(79deg) brightness(112%) contrast(105%);
+  background-image: url(../images/threebar-menu.svg) !important;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 30px;
+  filter: invert(94%) sepia(0%) saturate(7475%) hue-rotate(79deg) brightness(112%) contrast(105%);
 }
 
 .csmtPosition {
-    position: relative;
-    left: 3%;
-    color: #fff !important;
-    top: 8px;
+  position: relative;
+  left: 3%;
+  color: #fff !important;
+  top: 8px;
 }
 
 .volvoLogoLanding {
-    margin: 8px auto 30px;
-    display: block;
-    padding: 15px 0 25px 0;
-    width: 130px;
+  margin: 8px auto 30px;
+  display: block;
+  padding: 15px 0 25px 0;
+  width: 130px;
 }
 
 .volvoLogo {
-    margin: 8px auto 10px;
-    padding: 15px 0 10px 0;
-    width: 130px;
-    display: block;
-    position: relative;
-    right: 17px;
+  margin: 8px auto 10px;
+  padding: 15px 0 10px 0;
+  width: 130px;
+  display: block;
+  position: relative;
+  right: 17px;
 }
 
 .theReverseProject {
-    width: 85%;
-    text-align: center;
+  width: 85%;
+  text-align: center;
 }
 
 .registerCTA {
-    background: #7ea150;
-    padding: 12px 35px;
-    text-align: center;
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 30px;
-    font-family: 'Volvo Novum-Bold', sans-serif;
-    font-weight: bold;
-
+  background: #7ea150;
+  padding: 12px 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: "Volvo Novum-Bold", sans-serif;
+  font-weight: bold;
 }
 
 .volvoCar {
-    width: 45%;
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: -1;
+  width: 45%;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
 }
 
 .volvoCarLandingPage {
-    width: 45%;
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    z-index: -1;
+  width: 45%;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
 }
 
-form input[type=text] {
-    background: #fff;
-    width: 80%;
-    border-radius: 30px;
-    color: #0b673b;
-    font-size: 14px;
-    text-align: left;
-    padding: 15px;
-    margin: 0px 0 7px 0;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
+form input[type="text"] {
+  background: #fff;
+  width: 80%;
+  border-radius: 30px;
+  color: #0b673b;
+  font-size: 14px;
+  text-align: left;
+  padding: 15px;
+  margin: 0px 0 7px 0;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
-form input[type=text]:focus {
-    outline: none;
+form input[type="text"]:focus {
+  outline: none;
 }
 
-form input[type=file] {
-    display: none;
+form input[type="file"] {
+  display: none;
 }
 
 form .fileInput {
-    background: #fff;
-    width: 80%;
-    border-radius: 30px;
-    margin: 1px auto;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
+  background: #fff;
+  width: 80%;
+  border-radius: 30px;
+  margin: 1px auto;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 form .fileInput label {
-    color: #0b673b;
-    font-size: 14px;
-    text-align: left;
-    padding: 15px;
-    width: 100%;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
+  color: #0b673b;
+  font-size: 14px;
+  text-align: left;
+  padding: 15px;
+  width: 100%;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 input::placeholder {
-    color: #0b673b;
-    opacity: 1;
+  color: #0b673b;
+  opacity: 1;
 }
 
 form .uploadFileError {
-    color: #fff;
-    text-align: left;
-    font-size: 12px;
-    padding: 10px 0px 0 60px;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
+  color: #fff;
+  text-align: left;
+  font-size: 12px;
+  padding: 10px 0px 0 60px;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .submitCTA {
-    background: #7ea150;
-    padding: 12px 30px;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 30px;
-    font-family: 'Volvo Novum-Bold', sans-serif;
-    font-weight: bold;
+  background: #7ea150;
+  padding: 12px 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: "Volvo Novum-Bold", sans-serif;
+  font-weight: bold;
 }
 
 .submitCTA:hover {
-    background: #859f64;
+  background: #859f64;
 }
 
 .alreadyRegister {
-    font-size: 14px;
-    text-align: center;
-    color: #fff;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .cstmMrgn {
-    position: fixed;
-    bottom: 20px
+  position: fixed;
+  bottom: 20px;
 }
 
 .vehicleInput {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .thankYouImg {
-    width: 65%;
-    margin: 18px auto;
-    display: block;
+  width: 65%;
+  margin: 18px auto;
+  display: block;
 }
 
 .submittedMsg {
-    font-size: 14px;
-    text-align: center;
-    padding: 10px 0 20px 0;
-    color: #fff;
-    position: relative;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0 20px 0;
+  color: #fff;
+  position: relative;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .submittedMsg strong {
-    font-size: 16px;
-    display: block;
-    padding: 20px;
+  font-size: 16px;
+  display: block;
+  padding: 20px;
 }
 
 .submittedMsg::after {
-    border-bottom: 5px solid #fff;
-    content: " ";
-    display: block;
-    width: 17%;
-    margin: 0 auto;
-    border-radius: 6px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  border-bottom: 5px solid #fff;
+  content: " ";
+  display: block;
+  width: 17%;
+  margin: 0 auto;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .downloadCrtficate {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
+  width: 60%;
+  margin: 0 auto;
+  display: block;
 }
 
 .backArrow {
-    background: url(../images/back-arrow.svg);
-    width: 20px;
-    height: 20px;
-    transform: scale(1.2);
-    padding: 12px;
-    filter: invert(100%) sepia(52%) saturate(0%) hue-rotate(20deg) brightness(113%) contrast(101%);
-    position: relative;
-    top: 16px;
-    left: 20px;
+  background: url(../images/back-arrow.svg);
+  width: 20px;
+  height: 20px;
+  transform: scale(1.2);
+  padding: 12px;
+  filter: invert(100%) sepia(52%) saturate(0%) hue-rotate(20deg) brightness(113%) contrast(101%);
+  position: relative;
+  top: 16px;
+  left: 20px;
 }
 
 .instaPosts {
-    width: 100%;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 3px 5px 0px #040404;
-    padding: 12px;
-    background: #fff;
-    border-radius: 3px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 5px 0px #040404;
+  padding: 12px;
+  background: #fff;
+  border-radius: 3px;
 }
 
 .instaPosts img {
-    width: 100%;
-    height: 220px;
-    object-fit: contain;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
 }
 
 .instaHeading {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .abtPlantationImg {
-    position: relative;
-    z-index: 1;
-    width: 100%;
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
 .abtPltnWhiteBg {
-    background: #fff;
-    height: 160px;
-    position: absolute;
-    top: 130px;
-    left: 0;
-    right: 0;
+  background: #fff;
+  height: 160px;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
 }
 
 .abtPltnWhiteBg2 {
-    background: #fff;
-    height: 70px;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    right: 0;
+  background: #fff;
+  height: 70px;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
 }
 
 .abtPlntBodyText {
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
-    color: #fff;
-    font-size: 15px;
-    text-align: left;
-    padding: 33px 0 0 0;
-    line-height: 24px;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
+  color: #fff;
+  font-size: 15px;
+  text-align: left;
+  padding: 33px 0 0 0;
+  line-height: 24px;
 }
 
 .howtoprtcptImg {
-    width: 85px;
+  width: 85px;
 }
 
 .howtoParticipateText {
-    color: #0b6941;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 10px;
+  color: #0b6941;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px;
 }
 
 .abtPltnProjectWhiteBg {
-    height: auto;
-    top: -70px;
-    left: 0;
-    right: 0;
-    background: #fff;
-    position: absolute;
+  height: auto;
+  top: -70px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  position: absolute;
 }
 
 .abtPltnProjectWhiteBg p {
-    color: #0b6739;
-    font-size: 14px;
-    padding: 15px 0 0 0;
-    margin: 70px 10px 15px 10px;
+  color: #0b6739;
+  font-size: 14px;
+  padding: 15px 0 0 0;
+  margin: 70px 10px 15px 10px;
 }
 
 .accordion-button {
-    background: #e0efcf !important;
-    font-weight: 14px !important;
-    font-weight: 600;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
+  background: #e0efcf !important;
+  font-weight: 14px !important;
+  font-weight: 600;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .accordion-button:focus {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
-.accordion-flush>.accordion-item {
-    margin: 15px 0 0 0;
+.accordion-flush > .accordion-item {
+  margin: 15px 0 0 0;
 }
 
 .accordion-body {
-    font-size: 14px;
-    font-family: 'Volvo Novum-Regular', sans-serif !important;
-    line-height: 24px;
+  font-size: 14px;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
+  line-height: 24px;
 }
 
 .whiteBg {
-    background: #fff;
-    padding: 15px 0 15px 0;
-    height: 100vh;
+  background: #fff;
+  padding: 15px 0 15px 0;
+  height: 100vh;
 }
 
-
-
-
 @media (min-width: 768px) {
-    .cstmContainer {
-        width: 100%;
-        max-width: 1000px !important;
-        margin: 0 auto;
-    }
+  .cstmContainer {
+    width: 100%;
+    max-width: 1000px !important;
+    margin: 0 auto;
+  }
 
-    .vehicleInput {
-        width: 50% !important;
-    }
+  .vehicleInput {
+    width: 50% !important;
+  }
 
-    .navbar-collapse {
-        background: none;
-        position: static;
-    }
+  .navbar-collapse {
+    background: none;
+    position: static;
+  }
 
-    .nav-link {
-        font-size: 16px !important;
-        font-weight: bold;
-    }
+  .nav-link {
+    font-size: 16px !important;
+    font-weight: bold;
+  }
 
-    .nav-link .aboutReverseIcon {
-        margin: 0;
-        transform: scale(0.7);
-    }
+  .nav-link .aboutReverseIcon {
+    margin: 0;
+    transform: scale(0.7);
+  }
 
-    .csmtPosition {
-        left: auto;
-    }
+  .csmtPosition {
+    left: auto;
+  }
 
-    .cstmHeight {
-        height: auto;
-        background: none;
-    }
+  .cstmHeight {
+    height: auto;
+    background: none;
+  }
 
-    .navbar-nav {
-        top: 30px;
-        position: absolute;
-        right: 0px;
-    }
+  .navbar-nav {
+    top: 30px;
+    position: absolute;
+    right: 0px;
+  }
 
-    .volvoLogoLanding {
-        margin: 30px auto 30px;
-        display: block;
-        padding: 15px 0 25px 0;
-        width: 160px;
-    }
+  .volvoLogoLanding {
+    margin: 30px auto 30px;
+    display: block;
+    padding: 15px 0 25px 0;
+    width: 160px;
+  }
 
-    .volvoLogo {
-        margin: 14px auto 30px;
-        display: block;
-        padding: 15px 0 25px 0;
-        width: 160px;
-        float: left;
-    }
+  .volvoLogo {
+    margin: 14px auto 30px;
+    display: block;
+    padding: 15px 0 25px 0;
+    width: 160px;
+    float: left;
+  }
 
-    .theReverseProject {
-        width: 40%;
-    }
+  .theReverseProject {
+    width: 40%;
+  }
 
-    .volvoCar {
-        width: 10%;
-        bottom: -38px;
-    }
+  .volvoCar {
+    width: 10%;
+    bottom: -38px;
+  }
 
-    .volvoCarLandingPage {
-        width: 7.5%;
-        bottom: 0px;
-    }
+  .volvoCarLandingPage {
+    width: 7.5%;
+    bottom: 0px;
+  }
 
-    form input[type="text"] {
-        margin: 0px 0 15px 0;
-    }
+  form input[type="text"] {
+    margin: 0px 0 15px 0;
+  }
 
-    form .uploadFileError {
-        padding: 10px 0px 0 64px;
-    }
+  form .uploadFileError {
+    padding: 10px 0px 0 64px;
+  }
 
-    .navbar-expand-lg .navbar-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .navbar-expand-lg .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .cstmMrgn {
-        bottom: 30px;
-        left: 0;
-        right: 0;
-    }
+  .cstmMrgn {
+    bottom: 30px;
+    left: 0;
+    right: 0;
+  }
 
-    .thankYouImg {
-        width: 40%;
-    }
+  .thankYouImg {
+    width: 40%;
+  }
 
-    .submittedMsg {
-        font-size: 16px;
-    }
+  .submittedMsg {
+    font-size: 16px;
+  }
 
-    .submittedMsg strong {
-        font-size: 18px;
-    }
+  .submittedMsg strong {
+    font-size: 18px;
+  }
 
-    .downloadCrtficate {
-        width: 30%;
-    }
+  .downloadCrtficate {
+    width: 30%;
+  }
 
-    .abtPlantationImg {
-        width: 100%;
-    }
+  .abtPlantationImg {
+    width: 100%;
+  }
 
-    .abtPltnWhiteBg {
-        height: 350px;
-        top: 397px;
-        left: 0;
-        right: 0;
-    }
+  .abtPltnWhiteBg {
+    height: 350px;
+    top: 397px;
+    left: 0;
+    right: 0;
+  }
 
-    .abtPltnWhiteBg2 {
-        height: 150px;
-        top: 103px;
-    }
+  .abtPltnWhiteBg2 {
+    height: 150px;
+    top: 103px;
+  }
 
-    .abtPltnProjectWhiteBg p {
-        color: #0b6739;
-        font-size: 15px;
-        margin: 70px 10px 20px 10px;
-        line-height: 24px;
-    }
+  .abtPltnProjectWhiteBg p {
+    color: #0b6739;
+    font-size: 15px;
+    margin: 70px 10px 20px 10px;
+    line-height: 24px;
+  }
 
-    .howtoprtcptImg {
-        width: 120px;
-    }
+  .howtoprtcptImg {
+    width: 120px;
+  }
 }

@@ -1,36 +1,55 @@
 @font-face {
-  font-family: 'Volvo Novum-Regular';
+  font-family: "Volvo Novum-Regular";
   src: url(/fonts/VolvoNovum-Regular.otf);
 }
 
 @font-face {
-  font-family: 'Volvo Novum-Medium';
+  font-family: "Volvo Novum-Medium";
   src: url(/fonts/VolvoNovum-Medium.otf);
 }
 
 @font-face {
-  font-family: 'Volvo Novum-Bold';
+  font-family: "Volvo Novum-Bold";
   src: url(/fonts/VolvoNovum-Bold.otf);
 }
 
 @font-face {
-  font-family: 'VolvoBroad';
+  font-family: "VolvoBroad";
   src: url(/fonts/VolvoBroad.ttf);
 }
 
 @font-face {
-  font-family: 'VolvoBroadPro';
+  font-family: "VolvoBroadPro";
   src: url(/fonts/VolvoBroadPro.otf);
 }
 
+.font-regular {
+  font-family: "Volvo Novum-Regular", sans-serif !important;
+}
+
+.font-medium {
+  font-family: "Volvo Novum-Medium", sans-serif !important;
+}
+
+.font-broad {
+  font-family: "VolvoBroad", sans-serif !important;
+}
+
+.font-pro {
+  font-family: "VolvoBroadPro", sans-serif !important;
+}
+
+.font-bold {
+  font-family: "Volvo Novum-Bold", sans-serif !important;
+}
 
 .greenPattern {
-  background: url(/images/green-pattern.png) repeat;
+  background: url(/images/projectBG.jpg) repeat no-repeat center center / cover;
   height: 100vh;
 }
 
 .grayPattern {
-  background: url(/images/gray-pattern.png) repeat;
+  background: url(/images/projectBG.jpg) no-repeat center center / cover;
   height: 100vh;
   overflow: auto;
 }
@@ -49,14 +68,13 @@
 .cstmHeight {
   background: #3f3f40;
   height: 100vh;
-
 }
 
 .nav-link {
   color: #c0c5dd !important;
   padding: 0 0 25px 12px !important;
   font-size: 15px !important;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .nav-link .aboutReverseIcon {
@@ -155,7 +173,6 @@
   filter: invert(67%) sepia(64%) saturate(388%) hue-rotate(52deg) brightness(93%) contrast(85%);
 }
 
-
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.show {
@@ -174,7 +191,7 @@
   position: absolute;
   top: 21px;
   left: 20px;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .cstmWhiteBorder {
@@ -205,7 +222,7 @@
 }
 
 .offcanvas-backdrop.show {
-  opacity: .8 !important;
+  opacity: 0 !important;
 }
 
 /* .navbar-collapse.collapsing {
@@ -222,7 +239,6 @@
   left: -95%;
   transition: left 250ms ease-in-out;
 } */
-
 
 .navbar-toggler-icon {
   background-image: url(/images/threebar-menu.svg) !important;
@@ -273,11 +289,10 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 30px;
-  font-family: 'Volvo Novum-Bold', sans-serif;
+  font-family: "Volvo Novum-Bold", sans-serif;
   font-weight: bold;
   position: relative;
   z-index: 3;
-
 }
 
 .volvoCar {
@@ -299,9 +314,9 @@
   z-index: 1;
 }
 
-form input[type=text],
-input[type=number],
-input[type=password] {
+form input[type="text"],
+input[type="number"],
+input[type="password"] {
   background: #fff;
   width: 80%;
   border-radius: 30px;
@@ -310,16 +325,16 @@ input[type=password] {
   text-align: left;
   padding: 15px;
   margin: 0px 0 7px 0;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
-form input[type=text]:focus,
-input[type=number]:focus,
-input[type=password]:focus {
+form input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
   outline: none;
 }
 
-form input[type=file] {
+form input[type="file"] {
   display: none;
 }
 
@@ -328,7 +343,7 @@ form .fileInput {
   width: 80%;
   border-radius: 30px;
   margin: 1px auto;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 form .fileInput label {
@@ -337,7 +352,7 @@ form .fileInput label {
   text-align: left;
   padding: 15px;
   width: 100%;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 input::placeholder {
@@ -350,7 +365,7 @@ form .uploadFileError {
   text-align: left;
   font-size: 12px;
   padding: 10px 0px 0 50px;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .submitCTA {
@@ -362,7 +377,7 @@ form .uploadFileError {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 30px;
-  font-family: 'Volvo Novum-Bold', sans-serif;
+  font-family: "Volvo Novum-Bold", sans-serif;
   font-weight: bold;
   border: none;
 }
@@ -375,7 +390,7 @@ form .uploadFileError {
   font-size: 14px;
   text-align: center;
   color: #fff;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .cstmMrgn {
@@ -400,7 +415,7 @@ form .uploadFileError {
   padding: 10px 0 20px 0;
   color: #fff;
   position: relative;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .submittedMsg strong {
@@ -442,15 +457,21 @@ form .uploadFileError {
 
 .instaPosts {
   width: 100%;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 3px 5px 0px #040404;
+  text-align: center;
+  color: white;
   padding: 12px;
-  background: #fff;
-  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.12); /* soft transparent */
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  border-radius: 18px;
+  /* border: 1px solid rgba(255, 255, 255, 0.25); */
+}
+
+.instaPosts img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .instaLink {
@@ -458,23 +479,28 @@ form .uploadFileError {
   color: #000;
 }
 
-.instaPosts img {
-  width: 100%;
-  height: 220px;
-  object-fit: contain;
-}
-
 .instaHeading {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .abtPlantationImg {
-  position: relative;
-  z-index: 1;
+  background: rgba(255, 255, 255, 0.12); /* soft transparent */
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 12px;
+}
+
+.abtPlantationImg img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
   width: 100%;
+  border-radius: 12px;
 }
 
 .abtPltnWhiteBg {
@@ -496,7 +522,7 @@ form .uploadFileError {
 }
 
 .abtPlntBodyText {
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
   color: #fff;
   font-size: 15px;
   text-align: left;
@@ -539,14 +565,14 @@ form .uploadFileError {
   background: #e0efcf !important;
   font-size: 14px !important;
   font-weight: 600;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
 }
 
 .accordion-button:focus {
   box-shadow: none !important;
 }
 
-.accordion-flush>.accordion-item {
+.accordion-flush > .accordion-item {
   margin: 15px 0 0 0;
 }
 
@@ -560,13 +586,13 @@ form .uploadFileError {
   border: 0px !important;
 }
 
-.accordion-item:first-of-type>.accordion-header .accordion-button {
+.accordion-item:first-of-type > .accordion-header .accordion-button {
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   border: 0px !important;
 }
 
-.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
   border: 0px !important;
@@ -578,9 +604,8 @@ form .uploadFileError {
 
 .accordion-body {
   font-size: 13px;
-  font-family: 'Volvo Novum-Regular', sans-serif !important;
+  font-family: "Volvo Novum-Regular", sans-serif !important;
   line-height: 24px;
-  padding: 10px 0 10px 0 !important;
 }
 
 .whiteBg {
@@ -597,7 +622,6 @@ form .uploadFileError {
   margin: 0 auto;
   white-space: nowrap;
 }
-
 
 @media (min-width: 768px) {
   .homePageTab {
@@ -744,4 +768,65 @@ form .uploadFileError {
   .howtoprtcptImg {
     width: 120px;
   }
+}
+
+/* Apple Glassmorphism Accordion */
+.apple-glass-accordion .accordion-item {
+  background: rgba(255, 255, 255, 0.12); /* soft transparent */
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 14px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15), inset 0 0 0 0 rgba(255, 255, 255, 0.2); */
+}
+
+/* On open */
+.apple-glass-accordion .accordion-item.active,
+.apple-glass-accordion .accordion-item:has(.accordion-collapse.show) {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  /* box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3), inset 0 0 12px rgba(255, 255, 255, 0.35); */
+}
+
+/* Header styling */
+.apple-glass-accordion .accordion-button {
+  background: transparent !important;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 18px 20px;
+  backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  transition: all 0.2s ease;
+}
+
+/* Remove default Bootstrap dark arrow */
+.apple-glass-accordion .accordion-button::after {
+  filter: invert(1); /* make white for glass theme */
+  opacity: 0.9;
+}
+
+.apple-glass-accordion .accordion-button:not(.collapsed) {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: white;
+}
+
+/* Body */
+.apple-glass-accordion .accordion-body {
+  color: #e8e8e8;
+  padding: 20px;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+/* Hover effects */
+.apple-glass-accordion .accordion-button:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+}
+
+.apple-glass-accordion .accordion-item:hover {
+  border-color: rgba(255, 255, 255, 0.4);
 }

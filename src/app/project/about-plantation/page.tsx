@@ -4,24 +4,16 @@ export default function AboutPlantation() {
   return (
     <>
       <div className="row m-0">
-        <div className="col-12 text-center mb-4">
-          <div className="instaHeading">About Plantation Site</div>
-        </div>
         <div className="col-12">
-          <div className="row position-relative">
-            <div className="col-12 text-center">
-              <img
-                src="/images/about-plantation-top.png"
-                className="abtPlantationImg"
-              />
-            </div>
-            <div className="col-12 abtPltnWhiteBg"></div>
-          </div>
-        </div>
-        <div className="col-12">
-          <div className="abtPlntBodyText mb-3">
-            {" "}
-            The site for our plantation is a dump yard in Ghaziabad and with your efforts, we can transform it into a lush green land. We&apos;ve already planted 10,000 trees, and we look forward to reversing the damage further with you.
+          <div className="mb-4 text-center text-white">
+            <h3 className="mb-3">About Plantation Site</h3>
+
+            <p className="mb-5">The site for our plantation is a dump yard in Ghaziabad and with your efforts, we can transform it into a lush green land. We&apos;ve already planted 10,000 trees, and we look forward to reversing the damage further with you.</p>
+
+            <img
+              src="/images/about-plantation-top.png"
+              className=""
+            />
           </div>
         </div>
       </div>
