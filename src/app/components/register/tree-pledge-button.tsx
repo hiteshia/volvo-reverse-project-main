@@ -148,7 +148,7 @@ export default function TreePledgeButton({
         }}
       >
         <div style={{ marginBottom: "10px", color: "#9FCE69" }}>
-          ✓ Trees planted successfully!
+          ✓ Thank you for your commitment!
         </div>
         <div
           id="certificate"
