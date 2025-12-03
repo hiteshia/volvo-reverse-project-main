@@ -26,7 +26,10 @@ export default function Home() {
               </a>
             </div>
             <div className="col-12 pt-4 text-center text-white text-center">
-              <p>More than 10,000 trees have already been planted and with every kilometer you drive, you can help us plant more.</p>
+              <p>
+                More than 10,000 trees have already been planted and with every
+                kilometer you drive, you can help us plant more.
+              </p>
             </div>
             {/* <div className="col-12 text-center mt-3">
               <img
@@ -36,9 +39,7 @@ export default function Home() {
                 alt="volvo car"
               />
             </div> */}
-            <div
-              className="col-12 text-center"
-              style={{ zIndex: "1" }}>
+            <div className="col-12 text-center" style={{ zIndex: "1" }}>
               {/* <video
                 src="/video/volvo_reverse_latest_720p.mp4"
                 style={{ width: "96%", marginTop: "-2em", backgroundColor: "#000" }}
@@ -81,7 +82,8 @@ export default function Home() {
               bottom: 0,
               zIndex: 2,
               left: 0,
-            }}>
+            }}
+          >
             <div className="row homePageTab">
               <div
                 className="col-6"
@@ -90,16 +92,18 @@ export default function Home() {
                   height: "40px",
                   fontSize: ".8em",
                   lineHeight: "40px",
-                }}>
+                }}
+              >
                 <Link
-                  href="/vehicle/pledge-now"
+                  href="/vehicle/pledge-now-non-ev"
                   style={{
                     width: "100%",
                     height: "100%",
                     textDecoration: "none",
                     color: "#000",
                     display: "block",
-                  }}>
+                  }}
+                >
                   Non-EV Users
                 </Link>
               </div>
@@ -110,16 +114,18 @@ export default function Home() {
                   height: "40px",
                   fontSize: ".8em",
                   lineHeight: "40px",
-                }}>
+                }}
+              >
                 <Link
-                  href={"/vehicle/register"}
+                  href={"/vehicle/pledge-now-ev"}
                   style={{
                     width: "100%",
                     height: "100%",
                     textDecoration: "none",
                     color: "#000",
                     display: "block",
-                  }}>
+                  }}
+                >
                   EV Users
                 </Link>
               </div>

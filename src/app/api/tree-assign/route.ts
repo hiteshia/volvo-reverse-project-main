@@ -33,7 +33,7 @@ async function fetchAuthToken(): Promise<string | null> {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, count = 2 } = body;
+    const { name, count } = body;
 
     if (!name) {
       return NextResponse.json({ error: "Name is required" }, { status: 400 });
@@ -42,7 +42,10 @@ export async function POST(request: NextRequest) {
     // Fetch a fresh auth token
     const token = await fetchAuthToken();
     if (!token) {
-      return NextResponse.json({ error: "Failed to fetch auth token" }, { status: 500 });
+      return NextResponse.json(
+        { error: "Failed to fetch auth token" },
+        { status: 500 }
+      );
     }
 
     // Assign trees
@@ -60,16 +63,27 @@ export async function POST(request: NextRequest) {
       }
     );
 
-    if (response && response.data && Array.isArray(response.data) && response.data.length > 0) {
+    if (
+      response &&
+      response.data &&
+      Array.isArray(response.data) &&
+      response.data.length > 0
+    ) {
       return NextResponse.json({
         success: true,
         vforestUrl: response.data[0]["vforest-url"] || null,
       });
     }
 
-    return NextResponse.json({ error: "Failed to assign trees" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to assign trees" },
+      { status: 500 }
+    );
   } catch (error: any) {
     console.error("Error assigning trees:", error);
-    return NextResponse.json({ error: error.message || "An error occurred while assigning trees" }, { status: 500 });
+    return NextResponse.json(
+      { error: error.message || "An error occurred while assigning trees" },
+      { status: 500 }
+    );
   }
 }

@@ -24,13 +24,16 @@
 }
 
 .greenPattern {
-  background: url(../images/projectBG.jpg) repeat no-repeat center center / cover;
+  background: url(../images/projectBG.jpg) repeat no-repeat center center /
+    cover;
   height: 100vh;
 }
 
 .grayPattern {
-  background: url(../images/projectBG.jpg) repeat no-repeat center center / cover;
+  background: url(../images/projectBG.jpg) repeat no-repeat center center /
+    cover;
   height: 100vh;
+  overflow: auto;
 }
 
 .navbar-collapse {
@@ -121,7 +124,8 @@
 .plantationIcon.active,
 .instaPostIcon.active,
 .dwnCertificateIcon.active {
-  filter: invert(67%) sepia(64%) saturate(388%) hue-rotate(52deg) brightness(93%) contrast(85%);
+  filter: invert(67%) sepia(64%) saturate(388%) hue-rotate(52deg)
+    brightness(93%) contrast(85%);
 }
 
 .navbar-nav .nav-link.active,
@@ -196,7 +200,8 @@
   background-repeat: no-repeat;
   width: 50px;
   height: 30px;
-  filter: invert(94%) sepia(0%) saturate(7475%) hue-rotate(79deg) brightness(112%) contrast(105%);
+  filter: invert(94%) sepia(0%) saturate(7475%) hue-rotate(79deg)
+    brightness(112%) contrast(105%);
 }
 
 .csmtPosition {
@@ -389,7 +394,8 @@ form .uploadFileError {
   height: 20px;
   transform: scale(1.2);
   padding: 12px;
-  filter: invert(100%) sepia(52%) saturate(0%) hue-rotate(20deg) brightness(113%) contrast(101%);
+  filter: invert(100%) sepia(52%) saturate(0%) hue-rotate(20deg)
+    brightness(113%) contrast(101%);
   position: relative;
   top: 16px;
   left: 20px;
