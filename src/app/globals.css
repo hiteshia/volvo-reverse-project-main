@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Volvo Novum-Regular";
-  src: url(/fonts/VolvoNovum-Regular.otf);
+  font-family: "VolvoNovumRegular";
+  src: url(/fonts/VolvoNovumRegular2.otf);
 }
 
 @font-face {
-  font-family: "Volvo Novum-Medium";
-  src: url(/fonts/VolvoNovum-Medium.otf);
+  font-family: "VolvoNovumMedium";
+  src: url(/fonts/VolvoNovumMedium.otf);
 }
 
 @font-face {
@@ -489,9 +489,9 @@ form .uploadFileError {
 
 .instaHeading {
   color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Volvo Novum-Regular", sans-serif !important;
+  font-size: 32px;
+  /* font-weight: bold; */
+  font-family: "VolvoBroadPro", sans-serif !important;
 }
 
 .abtPlantationImg {
@@ -629,6 +629,36 @@ form .uploadFileError {
 .homePageTab {
   margin: 0 auto;
   white-space: nowrap;
+}
+
+.cstmContainer {
+  font-family: "VolvoNovumRegular", sans-serif !important;
+}
+
+.cstmContainer h3 {
+  font-family: "VolvoBroadPro", sans-serif !important;
+}
+
+.cstmContainer h2 {
+  font-family: "VolvoNovumRegular", sans-serif !important;
+}
+.cstmContainer h6 {
+  font-family: "VolvoNovumRegular", sans-serif !important;
+}
+
+.cstmContainer h4 {
+  font-family: "VolvoNovumRegular", sans-serif !important;
+  font-size: 22px;
+}
+
+.cstmContainer b {
+  font-family: "VolvoNovumRegular", sans-serif !important;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.cstmContainer li {
+  font-family: "VolvoNovumRegular", sans-serif !important;
 }
 
 @media (min-width: 768px) {
@@ -843,4 +873,34 @@ form .uploadFileError {
 
 .apple-glass-accordion .accordion-item:hover {
   border-color: rgba(255, 255, 255, 0.4);
+}
+
+.apple-glass-accordion .accordion-item {
+  backdrop-filter: unset !important;
+  background-color: rgb(255 255 255 / 20%) !important;
+  border-radius: 5px !important;
+  font-family: "VolvoNovumRegular" !important;
+}
+
+.apple-glass-accordion .accordion-body {
+  border: 1px solid !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  background-color: #00000057 !important;
+  font-family: "VolvoNovumRegular" !important;
+}
+
+.accordion-item > .accordion-header .accordion-button {
+  font-family: "VolvoNovumMedium" !important;
+  font-size: 16px !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-family: "VolvoNovumRegular" !important;
+}
+
+.overflow-auto {
+  margin-bottom: 40px;
+  overflow: auto;
+  height: calc(100vh);
 }

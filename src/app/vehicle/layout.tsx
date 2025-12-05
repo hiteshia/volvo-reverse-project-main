@@ -7,7 +7,7 @@ export default function VehicleLayout({
 }>) {
   return (
     <main className="grayPattern">
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0 overflow-auto">
         <div className="cstmContainerTopHeader">
           <Header />
         </div>

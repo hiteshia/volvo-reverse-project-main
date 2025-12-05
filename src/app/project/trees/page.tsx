@@ -13,7 +13,7 @@ export default function Tree() {
             Join the Reverse Project
           </h3> */}
           <h3 className="text-white text-center mb-4">
-            "Join the Reverse Project"
+            Join the Reverse Project
             <br />
             Trees planted under Reverse Project
           </h3>

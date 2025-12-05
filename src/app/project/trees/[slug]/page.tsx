@@ -46,7 +46,7 @@ export default function TreeDetail({ params }: { params: { slug: number } }) {
               <b>Common Name: </b>
               {tree["Common Name"]}
             </h2>{" "}
-            <h3 className={styles.subHeading}>Ecological Benefits</h3>
+            <h4 className={styles.subHeading}>Ecological Benefits</h4>
             <ul style={{ listStyle: "none" }}>
               {tree["Ecological Benefits"].split("\r\n").map((item, index) => (
                 <li style={{ marginBottom: "5px" }} key={index}>
@@ -54,9 +54,9 @@ export default function TreeDetail({ params }: { params: { slug: number } }) {
                 </li>
               ))}
             </ul>
-            <h3 className={styles.subHeading}>
+            <h4 className={styles.subHeading}>
               Suitability in Degraded Aravalli
-            </h3>
+            </h4>
             <ul style={{ listStyle: "none" }}>
               {tree["Suitability in Degraded Aravalli"]
                 .split("\r\n")

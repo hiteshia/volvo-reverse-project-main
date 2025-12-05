@@ -64,7 +64,7 @@ export default function Header() {
             <div className="mt-5 pb-3 d-md-none"></div>
             <div className="cstmWhiteBorder d-md-none mt-3"></div>
             <div className="navbar-nav">
-              <Link
+              {/* <Link
                 className={`nav-link d-md-none ${
                   pathname == "/" ? "active" : ""
                 }`}
@@ -79,7 +79,7 @@ export default function Header() {
                   }`}
                 ></div>
                 Home
-              </Link>
+              </Link> */}
               <Link
                 className={`nav-link ${pathname == "/" ? "active" : ""}`}
                 href={"/"}
@@ -108,7 +108,40 @@ export default function Header() {
                     pathname == "/project/about-reverse-project" ? "active" : ""
                   }`}
                 ></div>
-                About the project
+                About Reverse Project
+              </Link>
+
+              {/* <Link
+                className={`nav-link ${
+                  pathname == "/project/about-plantation" ? "active" : ""
+                }`}
+                href={"/project/about-plantation"}
+                onClick={() => {
+                  toggleShow();
+                }}
+              >
+                <div
+                  className={`plantationIcon d-md-none ${
+                    pathname == "/project/about-plantation" ? "active" : ""
+                  }`}
+                ></div>{" "}
+                The Plantation Site
+              </Link> */}
+              <Link
+                className={`nav-link ${
+                  pathname == "/project/trees" ? "active" : ""
+                }`}
+                href={"/project/trees"}
+                onClick={() => {
+                  toggleShow();
+                }}
+              >
+                <div
+                  className={`treeIcon d-md-none ${
+                    pathname == "/project/trees" ? "active" : ""
+                  }`}
+                ></div>{" "}
+                Know more about the trees
               </Link>
               <Link
                 className={`nav-link ${
@@ -125,22 +158,6 @@ export default function Header() {
                   }`}
                 ></div>{" "}
                 FAQs
-              </Link>
-              <Link
-                className={`nav-link ${
-                  pathname == "/project/about-plantation" ? "active" : ""
-                }`}
-                href={"/project/about-plantation"}
-                onClick={() => {
-                  toggleShow();
-                }}
-              >
-                <div
-                  className={`plantationIcon d-md-none ${
-                    pathname == "/project/about-plantation" ? "active" : ""
-                  }`}
-                ></div>{" "}
-                The Plantation Site
               </Link>
               {/* <Link
                 className={`nav-link ${
@@ -166,22 +183,7 @@ export default function Header() {
                 }}>
                 <div className={`dwnCertificateIcon d-md-none ${pathname == "/vehicle" ? "active" : ""}`}></div> Download Certificate
               </Link> */}
-              <Link
-                className={`nav-link ${
-                  pathname == "/project/trees" ? "active" : ""
-                }`}
-                href={"/project/trees"}
-                onClick={() => {
-                  toggleShow();
-                }}
-              >
-                <div
-                  className={`treeIcon d-md-none ${
-                    pathname == "/project/trees" ? "active" : ""
-                  }`}
-                ></div>{" "}
-                Trees planted
-              </Link>
+
               <div className="mt-3 d-md-none"></div>
               <div className="cstmWhiteBorder d-md-none mt-5"></div>
               <div className="d-md-none mt-3" style={{ color: "#c0c5dd" }}>
