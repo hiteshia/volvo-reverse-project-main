@@ -12,7 +12,7 @@ export default function AboutReverseProject() {
             About Reverse Project
           </h3>
 
-          <p>
+          {/* <p>
             The world is constantly grappling with climate change and
             environmental degradation. Volvo Car India&apos;s Reverse Project
             aims to reverse the damage done to the environment, through
@@ -30,6 +30,17 @@ export default function AboutReverseProject() {
           <p>
             Join us in our mission to nurture the planet and create a greener,
             healthier world for generations to come.
+          </p> */}
+          <p>
+            The Reverse Project by Volvo Cars India turns everyday journeys into
+            meaningful ecological action. Last year, it transformed a former
+            dump yard in Ghaziabad into a thriving green space with 35,000
+            trees. This year, the initiative expands across twenty acres of
+            Aravalli terrain along the Gurugram to Faridabad highway, where over
+            twenty thousand new trees are being planted to restore degraded land
+            and revive its natural ecosystem. With your support, we aim to cross
+            total of 55,000 trees and continue creating healthier, greener
+            spaces for generations to come.
           </p>
 
           <img

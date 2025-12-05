@@ -88,7 +88,7 @@ export default function Header() {
                 }}
               >
                 <div
-                  className={`dwnCertificateIcon d-md-none ${
+                  className={`homeIcon d-md-none ${
                     pathname == "/" ? "active" : ""
                   }`}
                 ></div>{" "}

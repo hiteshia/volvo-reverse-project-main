@@ -51,7 +51,7 @@
 .grayPattern {
   background: url(/images/projectBG.jpg) no-repeat center center / cover;
   height: 100vh;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .navbar-collapse {
@@ -331,7 +331,11 @@ input[type="password"] {
   text-transform: unset;
   padding: 15px;
   margin: 0px 0 7px 0;
-  font-family: "Volvo Novum-Regular", sans-serif !important;
+  font-family: "VolvoNovumRegular", sans-serif !important;
+}
+
+input[type="password"] {
+  color: black;
 }
 
 form input[type="text"]:focus,
@@ -480,6 +484,7 @@ form .uploadFileError {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 10px;
 }
 
 .instaLink {
@@ -496,8 +501,9 @@ form .uploadFileError {
 
 .abtPlantationImg {
   background: rgba(255, 255, 255, 0.12); /* soft transparent */
-  backdrop-filter: blur(8px) saturate(180%);
-  -webkit-backdrop-filter: blur(8px) saturate(180%);
+  background: rgba(255, 255, 255, 0.24);
+  /* backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%); */
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 12px;
@@ -569,6 +575,9 @@ form .uploadFileError {
   margin: 70px 10px 15px 10px;
 }
 
+.accordion {
+  margin-bottom: 50px;
+}
 .accordion-button {
   background: #e0efcf !important;
   font-size: 14px !important;
@@ -639,26 +648,33 @@ form .uploadFileError {
   font-family: "VolvoBroadPro", sans-serif !important;
 }
 
-.cstmContainer h2 {
+/* .cstmContainer h2 {
   font-family: "VolvoNovumRegular", sans-serif !important;
-}
+} */
 .cstmContainer h6 {
   font-family: "VolvoNovumRegular", sans-serif !important;
 }
 
 .cstmContainer h4 {
-  font-family: "VolvoNovumRegular", sans-serif !important;
-  font-size: 22px;
+  font-family: "VolvoNovumMedium", sans-serif !important;
+  font-size: 18px;
 }
 
 .cstmContainer b {
-  font-family: "VolvoNovumRegular", sans-serif !important;
-  font-size: 22px;
+  font-family: "VolvoNovumMedium", sans-serif !important;
+  font-size: 18px;
   font-weight: normal;
 }
 
 .cstmContainer li {
   font-family: "VolvoNovumRegular", sans-serif !important;
+}
+
+@media (min-width: 1076px) {
+  .cstmHeight {
+    background: #3f3f40;
+    height: 100vh;
+  }
 }
 
 @media (min-width: 768px) {
@@ -704,10 +720,10 @@ form .uploadFileError {
     left: auto;
   }
 
-  .cstmHeight {
+  /* .cstmHeight {
     height: auto;
     background: none;
-  }
+  } */
 
   .navbar-nav {
     top: 30px;
@@ -903,4 +919,30 @@ form .uploadFileError {
   margin-bottom: 40px;
   overflow: auto;
   height: calc(100vh);
+}
+
+/* Default state: show + icon */
+.accordion-button::after {
+  content: "+";
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff !important;
+
+  /* FULLY remove Bootstrap arrow */
+  background-image: none !important;
+  background: none !important;
+  filter: none !important;
+
+  /* Ensure the + is visible */
+  width: auto !important;
+  height: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* When accordion is open (not collapsed) change + to – */
+.accordion-button:not(.collapsed)::after {
+  content: "–";
+  color: #fff !important;
 }

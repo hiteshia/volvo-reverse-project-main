@@ -15,9 +15,7 @@ export default function TreeDetail({ params }: { params: { slug: number } }) {
           <div className="row">
             <div className="col-12">
               <h2 className="instaHeading text-center mb-4">
-                TREES PLANTED UNDER
-                <br />
-                REVERSE PROJECT
+                GET TO KNOW YOUR TREES
               </h2>
             </div>
             <div className="col-12 text-center">

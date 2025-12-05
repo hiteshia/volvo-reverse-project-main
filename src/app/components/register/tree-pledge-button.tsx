@@ -161,7 +161,7 @@ export default function TreePledgeButton({
             textAlign: "center",
           }}
         >
-          <h3
+          {/* <h3
             style={{
               position: "absolute",
               top: "110px",
@@ -174,7 +174,7 @@ export default function TreePledgeButton({
             }}
           >
             {vehicleNo}
-          </h3>
+          </h3> */}
           <img
             src={`${
               pathname.includes("non")

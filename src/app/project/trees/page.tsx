@@ -13,9 +13,10 @@ export default function Tree() {
             Join the Reverse Project
           </h3> */}
           <h3 className="text-white text-center mb-4">
-            Join the Reverse Project
+            {/* Join the Reverse Project
             <br />
-            Trees planted under Reverse Project
+            Trees planted under Reverse Project */}
+            GET TO KNOW YOUR TREES
           </h3>
           {trees.map((tree) => (
             <div className="col-6 col-md-6 mb-4" key={tree["S. No."]}>
