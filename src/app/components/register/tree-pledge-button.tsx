@@ -196,7 +196,7 @@ export default function TreePledgeButton({
         <div style={{ marginBottom: "20px" }}>
           <button
             onClick={handleDownloadCertificate}
-            className={`btn btn-primary ${styles.btnPledge}`}
+            className={`btn btn-primary downloadBtn ${styles.btnPledge}`}
             style={{
               marginTop: "10px",
               marginRight: "10px",

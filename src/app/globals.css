@@ -825,7 +825,7 @@ form .uploadFileError {
 }
 
 @media (min-width: 1500px) {
-  .cstmContainer {
+  .cstmMarginTop {
     margin-top: 150px !important;
   }
 }
@@ -945,4 +945,60 @@ form .uploadFileError {
 .accordion-button:not(.collapsed)::after {
   content: "–";
   color: #fff !important;
+}
+
+.offcanvas-header {
+  background-color: #3f3f40;
+  color: white;
+  border-bottom: 1px solid rgb(108 117 125) !important;
+}
+
+@media (min-width: 768px) {
+  .volvoLogo {
+    margin: 8px auto 10px;
+  }
+  .navbar-expand-lg .navbar-nav {
+    position: unset;
+    top: unset;
+    right: unset;
+    justify-content: unset;
+    align-items: unset;
+  }
+  .navbar-brand {
+    display: grid;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    position: absolute;
+    right: 0px;
+    margin-top: 10px;
+  }
+  .navbar-brand {
+    display: grid;
+    width: 100%;
+    align-items: center;
+  }
+  .volvoLogo {
+    margin: 0px auto 10px;
+    margin-inline: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .volvoLogo {
+    margin: 8px auto 10px;
+  }
+  .navbar-brand {
+    display: grid;
+    width: 100%;
+    align-items: center;
+  }
+
+  .downloadBtn {
+    margin-right: 0px !important;
+  }
 }

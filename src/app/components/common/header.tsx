@@ -7,16 +7,25 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [show, setShow] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [isTablet, setIsTablet] = useState<boolean>(false);
 
   const toggleShow = () => {
     setShow(!show);
   };
 
-  // Detect if the screen is mobile
+  // Detect screen size
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setIsMobile(width < 768);
+      setIsTablet(width >= 768 && width < 992);
+      // Close offcanvas when resizing to desktop
+      if (width >= 992) {
+        setShow(false);
+      }
+    };
+
     handleResize(); // Set initial value
-    setShow(false);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -25,67 +34,56 @@ export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg left-top">
       <div className="container-fluid">
-        <div className="row w-100">
-          <div className="col-2 col-md-0">
+        <div className="row w-100 align-items-center">
+          <div className="col-2 col-md-1 col-lg-0">
             <button
               className="navbar-toggler"
               type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
+              onClick={toggleShow}
+              aria-expanded={show}
               aria-label="Toggle navigation"
-              onClick={() => {
-                toggleShow();
-              }}
             >
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="backArrow d-none"></div>
           </div>
-          <div className="col-10 col-md-12">
+          <div className="col-10 col-md-11 col-lg-12">
             <Link
               href="https://www.volvocars.com/in/"
               target="_blank"
               className="navbar-brand"
             >
-              <img src="/images/volvo-logo.png" className="volvoLogo" />
+              <img
+                src="/images/volvo-logo.png"
+                className="volvoLogo"
+                alt="Volvo Logo"
+              />
             </Link>
           </div>
         </div>
+
+        {/* Offcanvas for mobile/tablet */}
         <div
-          className={`offcanvas-lg offcanvas-start flex-grow-1 ${
+          className={`offcanvas-lg offcanvas-start ${
             show ? "show" : ""
-          }`}
-          id="navbarNavAltMarkup"
+          } d-lg-none`}
+          style={show ? { visibility: "visible" } : {}}
         >
-          <div className="cstmHeight">
-            <div className="menuText d-md-none">Menu</div>
-            <div className="mt-5 pb-3 d-md-none"></div>
-            <div className="cstmWhiteBorder d-md-none mt-3"></div>
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title">Menu</h5>
+            <button
+              type="button"
+              className="btn-close"
+              onClick={toggleShow}
+              aria-label="Close"
+            ></button>
+          </div>
+          <div className="offcanvas-body cstmHeight">
             <div className="navbar-nav">
-              {/* <Link
-                className={`nav-link d-md-none ${
-                  pathname == "/" ? "active" : ""
-                }`}
-                href={"/"}
-                onClick={() => {
-                  toggleShow();
-                }}
-              >
-                <div
-                  className={`homeIcon d-md-none ${
-                    pathname == "/" ? "active" : ""
-                  }`}
-                ></div>
-                Home
-              </Link> */}
               <Link
-                className={`nav-link ${pathname == "/" ? "active" : ""}`}
-                href={"/"}
-                onClick={() => {
-                  toggleShow();
-                }}
+                className={`nav-link  ${pathname === "/" ? "active" : ""}`}
+                href="/"
+                onClick={toggleShow}
               >
                 <div
                   className={`homeIcon d-md-none ${
@@ -96,12 +94,10 @@ export default function Header() {
               </Link>
               <Link
                 className={`nav-link ${
-                  pathname == "/project/about-reverse-project" ? "active" : ""
+                  pathname === "/project/about-reverse-project" ? "active" : ""
                 }`}
-                href={"/project/about-reverse-project"}
-                onClick={() => {
-                  toggleShow();
-                }}
+                href="/project/about-reverse-project"
+                onClick={toggleShow}
               >
                 <div
                   className={`aboutReverseIcon d-md-none ${
@@ -110,31 +106,12 @@ export default function Header() {
                 ></div>
                 About Reverse Project
               </Link>
-
-              {/* <Link
-                className={`nav-link ${
-                  pathname == "/project/about-plantation" ? "active" : ""
-                }`}
-                href={"/project/about-plantation"}
-                onClick={() => {
-                  toggleShow();
-                }}
-              >
-                <div
-                  className={`plantationIcon d-md-none ${
-                    pathname == "/project/about-plantation" ? "active" : ""
-                  }`}
-                ></div>{" "}
-                The Plantation Site
-              </Link> */}
               <Link
                 className={`nav-link ${
-                  pathname == "/project/trees" ? "active" : ""
+                  pathname === "/project/trees" ? "active" : ""
                 }`}
-                href={"/project/trees"}
-                onClick={() => {
-                  toggleShow();
-                }}
+                href="/project/trees"
+                onClick={toggleShow}
               >
                 <div
                   className={`treeIcon d-md-none ${
@@ -145,12 +122,10 @@ export default function Header() {
               </Link>
               <Link
                 className={`nav-link ${
-                  pathname == "/project/faq" ? "active" : ""
+                  pathname === "/project/faq" ? "active" : ""
                 }`}
-                href={"/project/faq"}
-                onClick={() => {
-                  toggleShow();
-                }}
+                href="/project/faq"
+                onClick={toggleShow}
               >
                 <div
                   className={`participateIcon d-md-none ${
@@ -159,65 +134,73 @@ export default function Header() {
                 ></div>{" "}
                 FAQs
               </Link>
-              {/* <Link
-                className={`nav-link ${
-                  pathname == "/project/insta-posts" ? "active" : ""
-                }`}
-                href={"/project/insta-posts"}
-                onClick={() => {
-                  toggleShow();
-                }}
-              >
-                <div
-                  className={`instaPostIcon d-md-none ${
-                    pathname == "/project/insta-posts" ? "active" : ""
-                  }`}
-                ></div>{" "}
-                Instagram
-              </Link> */}
-              {/* <Link
-                className={`nav-link ${pathname == "/vehicle" ? "active" : ""}`}
-                href={"/vehicle"}
-                onClick={() => {
-                  toggleShow();
-                }}>
-                <div className={`dwnCertificateIcon d-md-none ${pathname == "/vehicle" ? "active" : ""}`}></div> Download Certificate
-              </Link> */}
 
-              <div className="mt-3 d-md-none"></div>
-              <div className="cstmWhiteBorder d-md-none mt-5"></div>
-              <div className="d-md-none mt-3" style={{ color: "#c0c5dd" }}>
-                <div className="row p-3">
-                  <div className="col-12 mb-3">
+              {/* Contact section for mobile only */}
+              <div className="d-lg-none mt-4 pt-3 border-top border-secondary">
+                <div className="text-white-50 p-3">
+                  <div className="mb-2">
                     <b>Contact Us:</b>
                   </div>
-                  <div className="col-12">
-                    Volvo Car India, Toll Free Number:
-                  </div>
-                  <div className="col-12 mt-1">
+                  <div>Volvo Car India, Toll Free Number:</div>
+                  <div className="mt-1">
                     <a
                       href="tel:1800 102 9100"
-                      style={{
-                        textDecoration: "underline",
-                        color: "#c0c5dd",
-                      }}
+                      className="text-decoration-underline text-white-50"
                     >
                       1800 102 9100
                     </a>
                   </div>
                 </div>
-                <p></p>
-                <p></p>
               </div>
             </div>
           </div>
         </div>
-        {show && isMobile && (
+
+        {/* Regular navbar for desktop (≥992px) */}
+        <div
+          className="collapse navbar-collapse d-none d-lg-flex"
+          id="navbarNav"
+        >
+          <div className="navbar-nav ms-auto">
+            <Link
+              className={`nav-link ${pathname === "/" ? "active" : ""}`}
+              href="/"
+            >
+              Home
+            </Link>
+            <Link
+              className={`nav-link ${
+                pathname === "/project/about-reverse-project" ? "active" : ""
+              }`}
+              href="/project/about-reverse-project"
+            >
+              About Reverse Project
+            </Link>
+            <Link
+              className={`nav-link ${
+                pathname === "/project/trees" ? "active" : ""
+              }`}
+              href="/project/trees"
+            >
+              Know more about the trees
+            </Link>
+            <Link
+              className={`nav-link ${
+                pathname === "/project/faq" ? "active" : ""
+              }`}
+              href="/project/faq"
+            >
+              FAQs
+            </Link>
+          </div>
+        </div>
+
+        {/* Backdrop for mobile/tablet */}
+        {show && (isMobile || isTablet) && (
           <div
             className="offcanvas-backdrop fade show"
-            onClick={() => {
-              toggleShow();
-            }}
+            onClick={toggleShow}
+            style={{ zIndex: 1040 }}
           ></div>
         )}
       </div>
