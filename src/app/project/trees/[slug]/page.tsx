@@ -1,4 +1,4 @@
-import trees from "@/data/trees.json";
+import trees from "@/data/newTrees.json";
 import styles from "./page.module.css";
 import { notFound } from "next/navigation";
 
@@ -52,10 +52,10 @@ export default function TreeDetail({ params }: { params: { slug: number } }) {
                 </li>
               ))}
             </ul>
-            <h4 className={styles.subHeading}>
+            {/* <h4 className={styles.subHeading}>
               Suitability in Degraded Aravalli
-            </h4>
-            <ul style={{ listStyle: "none" }}>
+            </h4> */}
+            {/* <ul style={{ listStyle: "none" }}>
               {tree["Suitability in Degraded Aravalli"]
                 .split("\r\n")
                 .map((item, index) => (
@@ -63,7 +63,7 @@ export default function TreeDetail({ params }: { params: { slug: number } }) {
                     {item}
                   </li>
                 ))}
-            </ul>
+            </ul> */}
             {/* <h3 className={styles.subHeading}>Cultural/Historicl/Mythological Importance</h3>
             <p>{tree["Cultural/Historicl/Mythological Importance"]}</p>             */}
           </div>

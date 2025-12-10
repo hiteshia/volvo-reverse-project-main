@@ -4,7 +4,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { useEffect, useRef } from "react";
 import styles from "./page.module.css";
-import trees from "@/data/trees.json";
+import trees from "@/data/newTrees.json";
 
 export default function Tree() {
   interface Tree {
@@ -85,7 +85,7 @@ export default function Tree() {
                       loading={index < 4 ? "eager" : "lazy"}
                       sizes="(max-width: 768px) 50vw, 33vw"
                     />
-                    <h6>{tree["Species Name"]}</h6>
+                    <h3>{tree["Species Name"]}</h3>
                   </div>
                 </Link>
               </div>

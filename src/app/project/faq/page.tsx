@@ -18,18 +18,18 @@ export default function Faqs() {
             <Accordion className="px-3 px-md-0 apple-glass-accordion">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  What is the objective of the Reverse Project by Volvo Cars
+                  What is the objective of the Reverse Project by Volvo Car
                   India?
                 </Accordion.Header>
                 <Accordion.Body>
-                  The Reverse Project by Volvo Cars India aims to restore the
-                  environment by creating large-scale green cover. This year,
-                  the initiative supports the Community Land Transformation
-                  Project in Gurugram, Haryana. The project is led by the
-                  SankalpTaru Foundation in partnership with the Haryana Forest
-                  Department, with Volvo Car India contributing to the
-                  restoration of degraded land and helping convert it into a
-                  thriving ecosystem. The initiative also encourages community
+                  The Reverse Project by Volvo Car India aims to restore the
+                  environment by creating large-scale green cover. The
+                  initiative supports the Community Land Transformation Project
+                  in Gurugram, Haryana. The project is led by the SankalpTaru
+                  Foundation in partnership with the Haryana Forest Department,
+                  with Volvo Car India contributing to the restoration of
+                  degraded land and helping convert it into a thriving
+                  ecosystem. The initiative also encourages community
                   participation, making environmental renewal a shared
                   responsibility.
                 </Accordion.Body>
@@ -75,9 +75,8 @@ export default function Faqs() {
                   Project?
                 </Accordion.Header>
                 <Accordion.Body>
-                  Volvo Cars India has planted 35,000 trees so far, and with
-                  each contribution by participants, we aim to cross 55,000
-                  trees.
+                  Volvo Car India has planted 35,000 trees so far, and with each
+                  contribution by participants, we aim to cross 55,000 trees.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="5">
@@ -86,8 +85,8 @@ export default function Faqs() {
                   and what was its previous condition?
                 </Accordion.Header>
                 <Accordion.Body>
-                  This year, the plantation site is spread across twenty acres
-                  of Maitri Van in Gurugram. The land had undergone significant
+                  The plantation site is spread across twenty acres of Maitri
+                  Van in Gurugram. The land had undergone significant
                   degradation over time and is now being restored through
                   large-scale plantation and ecological rehabilitation under the
                   Reverse Project.
@@ -98,7 +97,7 @@ export default function Faqs() {
                   How many trees will be planted under my name?
                 </Accordion.Header>
                 <Accordion.Body>
-                  EV owners will have 3 trees planted for them..
+                  EV owners will have 3 trees planted for them.
                   <br />
                   Non-EV owners will have 2 trees planted for them.
                 </Accordion.Body>

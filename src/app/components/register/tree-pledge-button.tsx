@@ -153,7 +153,7 @@ export default function TreePledgeButton({
         <div
           id="certificate"
           style={{
-            height: "462px",
+            height: "525px",
             marginBottom: "10px",
             position: "relative",
             width: "min-content",
@@ -189,8 +189,41 @@ export default function TreePledgeButton({
             }}
             crossOrigin="anonymous"
           />
-          <div style={{ position: "absolute", bottom: "20px", right: "40px" }}>
+          <div
+            style={{
+              fontSize: "6px",
+              padding: " 2px 5px",
+              position: "absolute",
+              bottom: "84px",
+              right: "67px",
+              backgroundColor: "rgb(133 202 11)",
+              color: "white",
+              verticalAlign: "middle",
+            }}
+          >
+            Vehicle No. {vehicleNo}
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              bottom: "20px",
+              right: "110px",
+              display: "flex",
+              alignItems: "center",
+              gap: "5px",
+            }}
+          >
             <BarcodeComponent url={vforestUrl} />
+            <p
+              style={{
+                fontSize: "7px",
+                margin: "0",
+                color: "white",
+                fontWeight: "bold",
+              }}
+            >
+              TRACK YOUR<br></br> TREES HERE.
+            </p>
           </div>
         </div>
         <div style={{ marginBottom: "20px" }}>
@@ -228,9 +261,8 @@ export default function TreePledgeButton({
           style={{ fontSize: "14px", marginBottom: "30px" }}
         >
           <h1 style={{ fontSize: "21px" }}>
-            I&apos;m Joining the Green Pledge
+            I&apos;m doing my bit for<br></br>a greener tomorrow
           </h1>
-          Committing to a Sustainable Tomorrow, Today!
         </div>
       )}
       {error && (

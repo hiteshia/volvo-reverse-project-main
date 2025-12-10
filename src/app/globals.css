@@ -540,7 +540,10 @@ form .uploadFileError {
   color: #fff;
   font-size: 15px;
   text-align: left;
-  padding: 33px 0 0 0;
+  background: #00000057;
+  margin-top: 33px;
+  padding: 20px 15px;
+  border-radius: 15px;
   line-height: 24px;
 }
 
@@ -989,6 +992,19 @@ form .uploadFileError {
 }
 
 @media (max-width: 768px) {
+  .grayPattern {
+    background-position-x: 27%;
+  }
+  .greenPattern {
+    background-position-x: 27%;
+  }
+  .instaPosts img {
+    height: 170px;
+  }
+
+  .offcanvas-header {
+    padding-left: 35px;
+  }
   .volvoLogo {
     margin: 8px auto 10px;
   }

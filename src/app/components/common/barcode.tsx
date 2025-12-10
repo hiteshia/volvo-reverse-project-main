@@ -11,7 +11,7 @@ export default function QRCodeComponent({ url }: QRCodeProps) {
       {/* <h2>QR Code for URL</h2> */}
       <QRCodeSVG
         value={url}
-        size={50}
+        size={40}
         bgColor="#ffffff"
         fgColor="#000000"
         level="Q" // Error correction level

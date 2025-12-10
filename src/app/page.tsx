@@ -27,13 +27,15 @@ export default function Home() {
             </div>
             <div className="col-12 pt-4 text-center text-white text-center">
               <p>
-                {/* More than 10,000 trees have already been planted and with every
-                kilometer you drive, you can help us plant more. */}
                 The Reverse Project has grown to 35,000 thriving trees that are
                 slowly bringing life back to degraded land. Our next milestone
                 is a combined total of 55,000 trees, expanding green cover and
-                strengthening local ecosystems. Donate your kilometres to help
-                push this restoration further.
+                strengthening local ecosystems.
+                <br></br>
+                <br></br>
+                As part of this effort, Volvo plants 3 trees for EV users and 2
+                trees for non-users. Support tree plantation & help push this
+                restoration further.
               </p>
             </div>
             {/* <div className="col-12 text-center mt-3">
